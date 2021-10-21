@@ -17,7 +17,6 @@ BR2_LINUX_KERNEL=n
 
 # Bootloader
 BR2_TARGET_OPENSBI=n
-
 # Mirrors
 BR2_GNU_MIRROR="https://mirrors.tuna.tsinghua.edu.cn/gnu"
 
@@ -35,3 +34,6 @@ BR2_PACKAGE_ETHTOOL=y
 BR2_PACKAGE_NTP=y
 BR2_PACKAGE_NTP_SNTP=y
 BR2_PACKAGE_NTP_NTPDATE=y
+
+# Overlay
+BR2_ROOTFS_OVERLAY="$(BR2_EXTERNAL_rocket_chip_vcu128_PATH)/overlay"

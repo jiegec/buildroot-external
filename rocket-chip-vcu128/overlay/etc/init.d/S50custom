@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# 1000M somehow not working
+ethtool -s eth0 speed 100 autoneg off
